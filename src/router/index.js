@@ -3,8 +3,8 @@ import HomeView from '@/views/home/HomeView.vue'
 import MySupportsView from '@/views/supports/MySupportsView.vue'
 import ModulesAndLessons from '@/views/modules/ModulesAndLessons.vue'
 import AuthView from '@/views/auth/AuthView.vue'
-import ForgetPasswordView from '@/views/auth/ForgetPasswordView'
-import ResetPasswordView from '@/views/auth/ResetPasswordView'
+import ForgetPasswordView from '@/views/auth/ForgetPasswordView.vue'
+import ResetPasswordView from '@/views/auth/ResetPasswordView.vue'
 
 import store from "@/store"
 import { TOKEN_NAME } from "@/configs"
@@ -45,9 +45,9 @@ const routes = [
   },
   {
     path: '/reset/:token',
-    name: 'reset-senha',
+    name: 'reset.password',
     component: ResetPasswordView,
-    props: true
+    props: true,
   },
 ]
 

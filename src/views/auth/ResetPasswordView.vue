@@ -104,7 +104,7 @@ export default {
                 //device_name: 'vue3_web',
                 token: props.token,
             })
-                .then(() => router.push({name: 'auth'}))
+                //.then(() => router.push({name: 'auth'}))
                 .then(() => {
                     notify({
                     title: 'Sucesso',
